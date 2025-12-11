@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FATED Auth Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Auth.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="screen-container">
+        <header class="header">
+          <div class="logo-wrapper">
+            <svg class="logo-heart" viewBox="0 0 512 512" xml:space="preserve">
+              <path
+                d="M460.5,94.3c-53.4-53.4-139.9-53.4-193.3,0L256,105.5l-11.2-11.2c-53.4-53.4-139.9-53.4-193.3,0s-53.4,139.9,0,193.3l204.5,204.5l204.5-204.5C513.9,234.2,513.9,147.7,460.5,94.3z"
+              />
+            </svg>
+          </div>
+          <h1 class="app-title">FATED</h1>
+        </header>
+
+        <main class="form-container">
+          <nav class="tabs">
+            <a href="#" class="tab inactive-tab">LOGIN</a>
+            <a href="#" class="tab active-tab">REGISTER</a>
+          </nav>
+
+          <form class="auth-form">
+            <input type="text" placeholder="User Name" class="form-input" />
+
+            <input type="password" placeholder="Password" class="form-input" />
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="form-input email-input"
+            />
+
+            <span class="forgot-text">Forgot password ?</span>
+
+            <button type="button" class="btn-submit">REGISTER</button>
+          </form>
+        </main>
+
+        <footer class="footer">
+          <p>Already have An Account ? <a href="#">Login</a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

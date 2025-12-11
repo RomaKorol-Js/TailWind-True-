@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FATED Auth Form</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Roboto", "sans-serif"],
+            },
+            colors: {
+              primary: "#ff5f5f",
+              "primary-soft": "#f45f5f",
+              placeholder: "#b0b0b0", 
+            },
+            boxShadow: {
+              "custom-logo": "0 4px 15px rgba(0, 0, 0, 0.1)",
+              "custom-tab": "0 4px 12px rgba(0, 0, 0, 0.1)",
+              "custom-btn": "0 4px 15px rgba(0, 0, 0, 0.15)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="m-0 font-sans">
+    <div class="flex justify-center min-h-screen w-full bg-primary">
+      <div
+        class="w-full max-w-[550px] mx-auto flex flex-col min-h-screen pt-[60px] px-[30px] pb-[40px]"
+      >
+        <header class="flex flex-col items-center mb-[50px]">
+          <div
+            class="w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center mb-[15px] shadow-custom-logo"
+          >
+            <svg
+              class="w-[55px] h-[55px] fill-primary rotate-[15deg]"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+            >
+              <path
+                d="M460.5,94.3c-53.4-53.4-139.9-53.4-193.3,0L256,105.5l-11.2-11.2c-53.4-53.4-139.9-53.4-193.3,0s-53.4,139.9,0,193.3l204.5,204.5l204.5-204.5C513.9,234.2,513.9,147.7,460.5,94.3z"
+              />
+            </svg>
+          </div>
+          <h1
+            class="font-extrabold text-[2.5rem] tracking-[2px] text-white m-0"
+          >
+            FATED
+          </h1>
+        </header>
+
+        <main class="w-full flex-1">
+          <nav class="flex gap-[15px] mb-[30px] relative">
+            <a
+              href="#"
+              class="flex-1 p-[14px] text-center no-underline font-bold text-[0.9rem] rounded-lg tracking-widest cursor-pointer transition-colors duration-300 bg-primary-soft text-white hover:bg-white/50"
+            >
+              LOGIN
+            </a>
+
+            <a
+              href="#"
+              class="flex-1 p-[14px] text-center no-underline font-bold text-[0.9rem] rounded-lg tracking-widest cursor-pointer transition-colors duration-300 bg-white text-primary shadow-custom-tab"
+            >
+              REGISTER
+            </a>
+          </nav>
+
+          <form class="flex flex-col w-full">
+            <input
+              type="text"
+              placeholder="User Name"
+              class="bg-white border-none rounded-lg py-[18px] px-[20px] mb-[15px] text-[1rem] w-full outline-none text-[#333] placeholder-placeholder"
+            />
+
+            <input
+              type="password"
+              placeholder="Password"
+              class="bg-white border-none rounded-lg py-[18px] px-[20px] mb-[15px] text-[1rem] w-full outline-none text-[#333] placeholder-placeholder"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="bg-white border-none rounded-lg py-[18px] px-[20px] mb-[15px] text-[1rem] w-full outline-none text-[#333] placeholder-placeholder"
+            />
+
+            <span
+              class="self-end text-white/80 text-[0.8rem] font-medium mb-[25px] cursor-pointer select-none"
+            >
+              Forgot password ?
+            </span>
+
+            <button
+              type="button"
+              class="bg-white text-primary border-none rounded-lg p-[18px] text-[1.1rem] font-extrabold tracking-widest cursor-pointer w-full uppercase shadow-custom-btn transition-transform duration-100 ease-in-out hover:opacity-95 active:scale-[0.98]"
+            >
+              REGISTER
+            </button>
+          </form>
+        </main>
+
+        <footer
+          class="mt-auto pt-[20px] text-center text-[0.85rem] text-white/80"
+        >
+          <p class="m-0">
+            Already have An Account ?
+            <a
+              href="#"
+              class="text-white font-extrabold no-underline ml-[5px] cursor-pointer border-b border-transparent hover:border-white transition-colors duration-300"
+            >
+              Login
+            </a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+:root {
+  --primary-color: #ff5f5f;
+  --page-bg: #ff5f5f;
+  --white: #ffffff;
+  --white-transparent: #f45f5f;
+  --text-placeholder: #b0b0b0;
+  --font-main: "Roboto", sans-serif;
+  --tab-gap: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--page-bg);
+}
+
+.screen-container {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 60px 30px 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo-wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-heart {
+  width: 55px;
+  height: 55px;
+  fill: var(--primary-color);
+  transform: rotate(15deg);
+}
+
+.app-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin: 0;
+}
+
+.form-container {
+  width: 100%;
+  flex: 1;
+}
+
+.tabs {
+  display: flex;
+  gap: var(--tab-gap);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.tab {
+  flex: 1;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.active-tab {
+  background-color: var(--white);
+  color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inactive-tab {
+  background-color: var(--white-transparent);
+  color: var(--white);
+}
+
+.inactive-tab:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-input {
+  background-color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  color: #333;
+}
+
+.email-input {
+  margin-bottom: 15px;
+}
+
+.form-input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.forgot-text {
+  align-self: flex-end;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-submit {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+.btn-submit:hover {
+  opacity: 0.95;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: var(--white);
+  font-weight: 800;
+  text-decoration: none;
+  margin-left: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.footer a:hover {
+  border-bottom: 1px solid var(--white);
+}
